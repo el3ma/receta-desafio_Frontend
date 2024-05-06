@@ -8,8 +8,9 @@
     font-family: "Young Serif", serif;
     src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
+
 @font-face {
-    font-family:'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
@@ -26,17 +27,168 @@
     --Outfit: 'Outfit', sans-serif;
 }
 
-h1, h2{
-    font-family:var(--Young-Serif);
+body {
+    font-family: var(--Outfit);
 }
 
-body{
-    font-family: var(--Outfit);
+.img-container {
+    width: 375px;
+    height: auto;
+
+    & .image {
+        width: 100%;
+    }
+}
+
+.main {
+    padding: 30px;
+}
+
+.title-container {
+    padding-bottom: 30px;
+
+    & .title {
+        font-family: var(--Young-Serif);
+        font-size: 2.2em;
+        font-style: normal;
+        color: var(--Dark-Charcoal);
+        padding-bottom: 15px;
+    }
+
+    & .subtitle {
+        font-size: 0.98em;
+        color: var(--Wenge-Brown);
+    }
+}
+
+.preparation-box {
+    width: 300px;
+    height: 200px;
+    background-color: var(--Rose-White);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    & .title-box {
+        color: var(--Dark-Raspberry);
+    }
+
+    & .list {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--Dark-Charcoal);
+
+        & .items {
+            padding: 7px 15px;
+        }
+
+        & .highlight {
+            font-weight: 700;
+        }
+    }
+}
+
+.ingredients__container {
+
+    & .ingredients__title {
+        font-family: var(--Young-Serif);
+        color: var(--Nutmeg);
+        padding: 20px 0 10px 0;
+    }
+
+    & .ingredients__list {
+        padding-left: 15px;
+        padding-bottom: 15px;
+
+        & li {
+            padding: 0 0 10px 15px;
+            font-size: 0.98em;
+            font-weight: 400;
+        }
+    }
+}
+
+hr {
+    border-top: 1px solid var(--Wenge-Brown);
+}
+
+.instruction {
+    margin: 20px 0 15px 0;
+
+    & .instruction__title {
+        font-family: var(--Young-Serif);
+        color: var(--Nutmeg);
+        font-size: 1.7em;
+    }
+
+    & .instruction__list {
+        padding: 15px;
+        color: var(--Nutmeg);
+        font-weight: 600;
+
+        li {
+            padding: 10px;
+        }
+
+        & .highlight {
+            color: var(--Dark-Charcoal);
+        }
+
+        & .list {
+            color: var(--Wenge-Brown);
+            font-weight: 400;
+        }
+    }
+}
+
+.nutrition {
+    padding: 20px 0;
+
+    & .nutrition__title {
+        font-family: var(--Young-Serif);
+        color: var(--Nutmeg);
+        font-size: 1.7em;
+    }
+
+    & .nutrition__subtitle {
+        font-size: 0.98em;
+        color: var(--Wenge-Brown);
+        padding: 20px 0;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%
+    }
+
+    td {
+        border-bottom: 1px solid var(--Light-Grey);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    & .name{
+        color: var(--Wenge-Brown);
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+
+    & .number{
+        color: var(--Nutmeg);
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+    tr:last-child td {
+        border-bottom: none;
+    }
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 30px 0;
 }
 
 
