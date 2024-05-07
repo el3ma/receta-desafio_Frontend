@@ -96,6 +96,7 @@ body {
         font-family: var(--Young-Serif);
         color: var(--Nutmeg);
         padding: 20px 0 10px 0;
+        font-size: 1.7em;
     }
 
     & .ingredients__list {
@@ -111,7 +112,8 @@ body {
 }
 
 hr {
-    border-top: 1px solid var(--Wenge-Brown);
+    border-top: 1px solid var(--Light-Grey);
+    margin: 5px 0;
 }
 
 .instruction {
@@ -133,7 +135,7 @@ hr {
         }
 
         & .highlight {
-            color: var(--Dark-Charcoal);
+            color: var(--Wenge-Brown);
         }
 
         & .list {
@@ -194,4 +196,31 @@ hr {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 768px) {
+   
+    body{
+        width: 800px;
+        background-color: var(--Eggshell);
+        margin: 80px auto;
+    }
+    .global-body{
+        background-color: var(--White);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .img-container{
+        width: 100%;
+        
+        & .image{
+            border-radius: 20px;
+        }
+    }
+
+    .preparation-box{
+        width: 100%;
+        border-radius: 20px;
+    }
 }
